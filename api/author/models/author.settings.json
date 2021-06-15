@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Author",
+  "info": {
+    "name": "Author",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "profession": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "uid": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}

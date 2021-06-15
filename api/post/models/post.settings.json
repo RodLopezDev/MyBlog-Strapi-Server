@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "posts",
   "info": {
-    "name": "post"
+    "name": "post",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -44,6 +45,25 @@
       "type": "text",
       "required": true,
       "maxLength": 200
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "categories": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "author": {
+      "model": "author"
+    },
+    "nextPost": {
+      "model": "post"
+    },
+    "previusPost": {
+      "model": "post"
     }
   }
 }
